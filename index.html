@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style media="screen">
+    body {
+        margin: 0;
+    }
+
+    @font-face {
+        font-family: myFirstFont;
+        src: url('./fonts/Forza-Book.otf');
+    }
+
+    .container {
+        font-family: myFirstFont;
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        flex: 1;
+    }
+
+    .loging {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .form-container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .txt {
+      font-size: .8rem;
+        letter-spacing: .2rem;
+        color: #7D7773;
+        flex-direction: column;
+        margin: 0;
+        padding-left: 2rem;
+        flex: 1;
+    }
+
+    .input {
+        color: #9CCF8A;
+        font-size: 1rem;
+        flex-direction: column;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid;
+        border-bottom-width: .1rem;
+        border-bottom-color: #7D7773;
+        letter-spacing: .1rem;
+        flex: 2
+    }
+
+    #strike {
+        height: 20vh;
+        padding-top: 3rem;
+    }
+
+    .inup {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex: 1;
+    }
+
+    .in {
+      font-size: .8rem;
+        background-color: #9CCF8A;
+        flex-direction: row;
+    }
+
+    .up {
+      font-size: .8rem;
+        background-color: #7D7773;
+        flex-direction: row;
+    }
+
+    .li {
+      letter-spacing: .1rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img id="strike" src="./images/logo.png" alt="">
+        </div>
+
+        <div class="form-container">
+            <div class="loging">
+                <h4 class="txt">Email</h4>
+                <input class="input" type="text" name="" placeholder="Email">
+
+            </div>
+
+            <div class="loging">
+                <h4 class="txt">Password</h4>
+                <input class="input" type="password" name="" placeholder="******">
+
+            </div>
+        </div>
+
+        <div class="inup">
+
+            <div class="in">
+                <h4 class="li">SIGN IN</h4>
+            </div>
+            <div class="up">
+                <h4 class="li">SIGN UP</h4>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
